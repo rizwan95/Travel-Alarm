@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/abc1">
+
+
+
+    <Button android:id="@+id/btnShowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Location"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/latView"
+        android:text="Latitude"
+        android:layout_above="@+id/longview"
+        android:layout_alignLeft="@+id/btnShowLocation"
+        android:layout_alignStart="@+id/btnShowLocation"
+        android:layout_marginBottom="71dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/longview"
+        android:text="Longitude"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/latView"
+        android:layout_alignStart="@+id/latView" />
+
+</RelativeLayout>
